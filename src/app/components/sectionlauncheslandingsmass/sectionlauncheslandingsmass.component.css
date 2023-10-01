@@ -1,0 +1,54 @@
+@keyframes spin {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+}
+.box-number{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 5vh;
+}
+.number{
+    animation: spin 1.2s linear;
+   transform-style: preserve-3d;
+}
+.number h1{
+    font-size: 60px;
+}
+.number p{
+    font-size: 30px;
+}
+#box-text-secton-2{
+    width: 40%;
+    font-size: 20px;
+    margin-top: 20vh;
+    position: absolute;
+    left: -25%;
+    transition: left 1.2s;
+}
+
+@media (max-width: 768px){
+    
+    .number{
+        width: 30%;
+    }
+    .number h1{
+        font-size: 1.2em;
+    }
+    .number p{
+        font-size: .9em;
+    }
+    #box-text-secton-2{
+        font-size: 1.1em;
+        width: 70%;
+    }
+}
+@media (max-width: 375px){
+    #box-text-secton-2{
+        width: 92%;
+    }
+}

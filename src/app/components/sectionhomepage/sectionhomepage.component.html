@@ -1,0 +1,16 @@
+<section id="section-1" [style.background-image]="'url(' + backgroundImageUrl + ')'">
+    <div class="box-text" [style.gap]="scrollTop > (currentHeight * numberSection) ? '2vh' : '' ">
+        <p class="box-title">{{content}}</p>
+        <div>
+            <h1 class="text">{{title}}</h1>
+            <button 
+                id="btn-white-border" 
+                class="btn-white-border"
+                [style.margin-top]="scrollTop > (currentHeight * numberSection) ? '0' : '2vh'"
+            >{{name_button}}</button>
+        </div>
+    </div>
+    <a routerLink="#section-2" id="down-arrow" >
+        <img src="/assets/imagem/home/arrowDown.gif" alt="" [style.display]="arrow ? 'block' : 'none'">
+    </a>
+</section>

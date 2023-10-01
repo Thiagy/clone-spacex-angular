@@ -1,0 +1,40 @@
+#section-5{
+    padding: 9vh;
+}
+.box-title{
+    padding: 1vh 0 1vh 10vh;
+}
+.text-merlin{
+    width: 40%;
+    font-size: 20px;
+    margin:  3vh;
+    
+}
+.text-merlin div{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0;
+    font-size: 14px;
+}
+
+.box-text-merlin{
+    line-height: 30px;
+}
+@media (max-width: 768px){
+    
+    .box-text-merlin{
+        font-size: .7em;
+    }
+    .text-merlin{
+        width: 70%;
+    }   
+}
+
+@media (max-width: 375px){
+    #section-5{
+        padding: 0;
+    }
+    .text-merlin{
+        width: 92%;
+    }
+}

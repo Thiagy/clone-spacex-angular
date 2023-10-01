@@ -1,0 +1,30 @@
+<header id="header" [style.opacity]="headerOpacity">
+    <a routerLink='' id="div-logo">
+        
+        <img id="logo-s" src="/assets/imagem/home/s.png" alt="">
+        <img id="logo-p" src="/assets/imagem/home/p.png" alt="">
+        <img id="logo-a" src="/assets/imagem/home/a.png" alt="">
+        <img id="logo-c" src="/assets/imagem/home/c.png" alt="">
+        <img id="logo-e" src="/assets/imagem/home/e.png" alt="">
+        <img id="logo-x" src="/assets/imagem/home/x.png" alt="">
+    </a>
+    <nav id="option-list">
+        <a routerLink='falcon-9'>FALCON 9</a>
+        <a routerLink='humanspaceflight'>HUMAN SPACEFLIGHT</a>
+        <a routerLink='dragon'>DRAGON</a>
+        <a routerLink="#">FALCON HEAVY</a>
+        <a routerLink="#">STARSHIP</a>
+        <a routerLink="#">RIDESHARE</a>
+        <a routerLink="#">STARSHIELD</a>
+        <a routerLink="#">STARLINK</a>
+    </nav>
+    <nav id="div-shop">
+        <a id="shop-title" routerLink="#">SHOP</a>
+        
+    </nav>
+</header> 
+<div id="box-menu" (click)="toggleMenu()" [style.opacity]="headerOpacity">
+    <div class="little-bar" [ngStyle]="getLittleBarStyles(0)"></div>
+    <div class="little-bar" [ngStyle]="getLittleBarStyles(1)"></div>
+    <div class="little-bar" [ngStyle]="getLittleBarStyles(2)"></div>
+</div>

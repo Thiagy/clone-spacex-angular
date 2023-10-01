@@ -1,0 +1,17 @@
+<section id="section-2" style="background-image: url('/assets/imagem/falcon9/02.jpg');">
+    <div class="box-number">
+      <div class="number" [ngClass]="{'number': scrollTop > (currentHeight * numberSection)}">
+        <h1 id="titleNumber1">{{titleNumber1}}</h1>
+        <p>TOTAL LAUNCHES</p>
+      </div>
+      <div class="number" [ngClass]="{'number': scrollTop > (currentHeight * numberSection)}">
+        <h1 id="titleNumber2">{{titleNumber2}}</h1>
+        <p>TOTAL LANDINGS</p>
+      </div>
+      <div class="number" [ngClass]="{'number': scrollTop > (currentHeight * numberSection)}">
+        <h1 id="titleNumber3">{{titleNumber3}}</h1>
+        <p>TOTAL MASS</p>
+      </div>
+    </div>
+    <p id="box-text-secton-2" [style.left]="scrollTop > (currentHeight * numberSection) ? '20px' : '' ">{{content}}</p>
+</section>

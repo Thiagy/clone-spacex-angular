@@ -1,0 +1,42 @@
+.option_menu{
+    display: block; 
+    text-align: end; 
+    
+}
+.line_option_menu{
+    margin-bottom: 2vh;
+}
+#backdrop{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .35);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 100%;
+}
+#openmenu{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    right: -294px;
+    height: 100vh;
+    width: 294px;
+    background-color: black;
+    transition: right .8s ease-in-out;
+    color: white;
+    padding: 80px 20px;
+}
+.option-list-ocult{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    
+    .option-list-ocult{
+        display: block;
+    }
+}
+

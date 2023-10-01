@@ -1,0 +1,23 @@
+#box-text-main{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    gap: 5vh;
+    transition: gap 1s;
+}
+#box-text-main h1{
+    font-size: 6.5em;
+}
+
+@media (max-width: 768px){
+    #box-text-main h1{
+        font-size: 2em;
+    }
+    .box-text-main p{
+        font-size: 1em;
+    }
+    
+}

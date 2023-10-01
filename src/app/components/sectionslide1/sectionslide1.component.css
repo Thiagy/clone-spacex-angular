@@ -1,0 +1,19 @@
+#section_slide{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12vh;
+    border: 1px solid green;
+}
+.box-title-slide h4{
+    font-size: 20px;
+}
+.box-title-slide h1{
+    font-size: 30px;
+}
+.box-text-slide{
+    width: 40%;
+    margin-top: 5vh;
+}

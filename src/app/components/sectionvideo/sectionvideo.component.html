@@ -1,0 +1,25 @@
+<section id="section-4" style="background-image: url('/assets/imagem/falcon9/09.jpg'); cursor: pointer;" (click)="showVideo()">
+    <div class="box-text">
+      <p class="box-title">VIDEO</p>
+      <div>
+          <h1 class="text">FALCON 9 IN FLIGHT</h1>
+      </div>
+  </div>
+  <img id="img-play" src="/assets/imagem/falcon9/play.png" alt="img-play">
+</section>
+<section id="section-video-ocult" 
+    [style.bottom]="conditionVideo ? '0' : '' "
+>
+    <iframe 
+      width="80%"
+      height="90%"  
+      src="https://www.youtube.com/embed/78ATfCaBn6E" 
+      title="Crew Dragon | Interior" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+    <div id="box-close" (click)="showVideo()">
+      <div id="arrawClose1"></div>
+      <div id="arrawClose2"></div>
+    </div>
+  </section>

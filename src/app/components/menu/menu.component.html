@@ -1,0 +1,35 @@
+<aside id="openmenu" [style.right]="right? '0': '-294px'">
+
+    <!--option list ocult-->
+    <div class="option-list-ocult">
+        <a class='option_menu' routerLink='falcon-9' (click)="toggleMenu()">FALCON 9</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink='humanspaceflight' (click)="toggleMenu()">HUMAN SPACEFLIGHT</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink='dragon' (click)="toggleMenu()">DRAGON</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink="#">FALCON HEAVY</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink="#">STARSHIP</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink="#">RIDESHARE</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink="#">STARSHIELD</a>
+        <hr class="line_option_menu">
+        <a class='option_menu' routerLink="#">STARLINK</a>
+        <hr class="line_option_menu">
+    </div>
+    
+    <a class='option_menu' routerLink="#">MISSION</a>
+    <hr class="line_option_menu">
+    <a class='option_menu' routerLink="#">LAUNCHES</a>
+    <hr class="line_option_menu">
+    <a class='option_menu' routerLink="#">CARRERS</a>
+    <hr class="line_option_menu">
+    <a class='option_menu' routerLink="#">UPDATES</a>
+    <hr class="line_option_menu">
+    <a class='option_menu' routerLink="#">SHOP</a>
+    <hr class="line_option_menu">
+
+</aside><!--div open menu-->
+<div id="backdrop" [style.display]="right? 'block': 'none'" (click)="toggleMenu()"></div>

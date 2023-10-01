@@ -1,0 +1,138 @@
+#slide{
+    overflow-x: hidden; 
+    background-color: black; 
+    height: 120vh;
+}
+#box-sliders{
+    display: flex; 
+    width: 500%; 
+    height: 90%; 
+    transition: .5s;
+}
+.div-slide{
+    width: 20%;
+    cursor: pointer;
+    position: relative;
+}
+.div-slide img{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+.box-title-slide{
+    position: absolute;
+    left: 17%;
+    bottom: 5%;
+}
+.box-title-slide h4{
+    font-size: 3vh;
+}
+.box-title-slide h1{
+    font-size: 5vh;
+}
+.box-text-slide{
+    width: 40%;
+    margin-top: 5vh;
+}
+#section-video-ocult{
+    bottom: -100%;
+    width: 100%;
+    z-index: 99;
+    transition: 2s;
+    position: fixed;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: black;
+}
+#box-close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: 2s;
+    justify-content: center;
+    align-items: center;
+}
+#arrawClose1{
+    transform: rotate(45deg);
+    background-color: aliceblue;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+   
+}
+#arrawClose2{
+    transform: rotate(135deg);
+    background-color: aliceblue;
+    width: 100%;
+    height: 2px;
+}
+#img-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10vh;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+}
+.box-naviation{
+    padding: 0 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navigation{
+    width:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vh;
+}
+.optionNav{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #949495;
+    cursor: pointer;
+}
+.arrowSlide{
+    cursor: pointer;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 3px;
+}
+#leftArrow{
+    transform: rotate(-45deg);
+    box-shadow: inset 5px 5px #414041;
+}
+#rightArrow{
+    transform: rotate(135deg);
+    box-shadow: inset 5px 5px white;
+}
+@media (max-width: 768px){
+
+    .div-slide img{
+        width: 100%;
+    }
+    .navigation{
+        width: 40%;
+    }
+    
+}
+@media (max-width: 375px){
+    
+    #box-title-text{
+        width:90%;
+    }
+    #box-close{
+        top: 10px;
+        right: 10px;
+    }
+
+}

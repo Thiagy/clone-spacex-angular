@@ -1,0 +1,137 @@
+<section id="slide">
+  <div id="box_section_slide" [style.margin-left]="numberSlide">
+
+    <div class="section_slide" style="background-image: url('/assets/imagem/falcon9/03.jpg');">
+      <div class="box-title-slide">
+        <h4>FALCON 9</h4>
+        <h1>OVERVIEW</h1>
+      </div>
+      <div class="box-text-slide">
+        <div>
+          <p>HEIGHT</p>
+          <p>70 m / 229.6 ft</p>
+        </div>
+        <hr>
+        <div>
+          <p>DIAMETER</p>
+          <p>3.7 m / 12 ft</p>
+        </div>
+        <hr>
+        <div>
+          <p>MASS</p>
+          <p>549,054 kg / 1,207,920 lb</p>
+        </div>
+        <hr>
+        <div>
+          <p>PAYLOAD TO LEO</p>
+          <p>22,800 kg / 50,265 lb</p>
+        </div>
+        <hr>
+        <div>
+          <p>PAYLOAD TO GTO</p>
+          <p>8,300 kg / 18,300 lb</p>
+        </div>
+        <hr>
+        <div>
+          <p>PAYLOAD TO MARS</p>
+          <p>4,020 kg / 8,860 lb</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="section_slide" style="background-image: url('/assets/imagem/falcon9/04.jpg');">
+      <div class="box-title-slide">
+        <h4>FALCON 9</h4>
+        <h1>FIRST STAGE</h1>
+        <h4>OVERVIEW | ENGINES | LANDING LEGS</h4>
+      </div>
+      <p class="box-text-slide">
+        Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant.
+      </p>
+      <p class="box-text-slide">Falcon 9 generates more than 1.7 million pounds of thrust at sea level.</p>
+      
+    </div>
+    <div class="section_slide" style="background-image: url('/assets/imagem/falcon9/05.jpg');">
+      <div class="box-title-slide">
+        <h4>FALCON 9</h4>
+        <h1>SECOND STAGE</h1>
+      </div>
+      <p class="box-text-slide">
+        The second stage, powered by a single Merlin Vacuum Engine, delivers Falcon 9's payload to the desired orbit. The second stage engine ignites a few seconds after stage separation, and can be restarted multiple times to place multiple payloads into different orbits.
+      </p>
+      <div class="box-text-slide">
+        <div>
+          <p>NUMBER OF ENGINES</p>
+          <p>1 vacuum</p>
+        </div>
+        <hr>
+        <div>
+          <p>BURN TIME</p>
+          <p>397 sec</p>
+        </div>
+        <hr>
+        <div>
+          <p>THRUST</p>
+          <p>981 kN / 220,500 lbf</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="section_slide" style="background-image: url('/assets/imagem/falcon9/06.jpg');">
+      <div class="box-title-slide">
+        <h4>FALCON 9</h4>
+        <h1>INTERSTAGE</h1>
+      </div>
+      <p class="box-text-slide">
+        The interstage is a composite structure that connects the first and second stages, and houses the pneumatic pushers that allow the first and second stage to separate during flight.
+      </p>
+      <h4>GRID FINS</h4>
+      <p class="box-text-slide">
+        The interstage is a composite structure that connects the first and second stages, and houses the pneumatic pushers that allow the first and second stage to separate during flight.
+      </p>
+    </div>
+    <div class="section_slide" style="background-image: url('/assets/imagem/falcon9/07.jpg');">
+      <div class="box-title-slide">
+        <h4>FALCON 9</h4>
+        <h1>PAYLOAD</h1>
+        <h4>FAIRING | DRAGON</h4>
+      </div>
+      <p class="box-text-slide">
+        Made of a carbon composite material, the fairing protects satellites on their way to orbit. The fairing is jettisoned approximately 3 minutes into flight, and SpaceX continues to recover fairings for reuse on future missions
+      </p>
+      <div class="box-text-slide">
+        <div>
+          <p>HEIGHT</p>
+          <p>13.1 m / 43 ft</p>
+        </div>
+        <hr>
+        <div>
+          <p>DIAMETER</p>
+          <p>5.2 m / 17.1 ft</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box-naviation">
+
+    <div id="leftArrow" 
+      class="arrowSlide" 
+      [style.box-shadow]="numberSlide === '0%'? 'inset 5px 5px #414041' : 'inset 5px 5px white'"
+      (click)="leftArrowSlide()"></div>
+
+    <div class="navigation">
+      <div class="optionNav" *ngFor="let option of optionsnavigation" [style.background-color]="numberSlide === option? 'white' : '' " (click)="slide(option)"></div>
+      
+    </div>
+
+    <div 
+      id="rightArrow" class="arrowSlide" 
+      [style.box-shadow]="numberSlide === '-400%' ? 'inset 5px 5px #414041' : 'inset 5px 5px white'"
+      (click)="rightArrowSlide()"
+    ></div>
+
+  </div>
+</section>

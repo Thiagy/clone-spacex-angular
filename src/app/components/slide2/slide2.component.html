@@ -1,0 +1,59 @@
+<section id="slide">
+    <div id="box-sliders" [style.margin-left]="numberSlide">
+      
+      <div class="div-slide" *ngFor="let sectionVideo of sectionsVideo" (click)="showVideo()">
+        <div class="box-title-slide">
+          <h4>{{ sectionVideo.title }}</h4>
+          <p>{{ sectionVideo.text }}</p>
+        </div>
+        <img id="img-play" src="/assets/imagem/falcon9/play.png" alt="img-play">
+        <img [src]="sectionVideo.urlimg" alt="">
+      </div>
+    
+    </div>
+    <div class="box-naviation">
+
+      <div 
+        id="leftArrow" 
+        class="arrowSlide" 
+        [style.box-shadow]="numberSlide === '0%'? 'inset 5px 5px #414041' : 'inset 5px 5px white'"
+        (click)="leftArrowSlide()"
+      ></div>
+
+      <div class="navigation" >
+
+        <div 
+          class="optionNav" 
+          *ngFor="let sectionVideo of sectionsVideo; let index = index" 
+          [style.background-color]="numberSlide === sectionVideo.value? 'white' : '' " 
+          (click)="slide(sectionVideo.value, index)"
+        ></div>
+        
+      </div>
+
+      <div 
+        id="rightArrow" 
+        class="arrowSlide" 
+        [style.box-shadow]="numberSlide === '-300%' ? 'inset 5px 5px #414041' : 'inset 5px 5px white'"
+        (click)="rightArrowSlide()"
+      ></div>
+
+    </div>
+</section>
+<section id="section-video-ocult" [style.bottom]="conditionVideo ? '0' : '' ">
+  <iframe 
+    id="frame-slide"
+    width="80%" 
+    height="90%" 
+    src="https://www.youtube.com/embed/A_sEusdoTIM"
+    title="Viewing Earth From Dragon" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+  
+  <div id="box-close" (click)="showVideo()">
+      <div id="arrawClose1"></div>
+      <div id="arrawClose2"></div>
+  </div>
+</section>

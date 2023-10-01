@@ -1,0 +1,107 @@
+#slide{
+    overflow-x: hidden;
+}
+#box_section_slide{
+    width: 500%; 
+    height: 100%; 
+    display: flex; 
+    position: relative;
+    transition: .5s;
+}
+.section_slide{
+    height: 100%;
+    width: 20%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10vh; 
+    position: relative;
+}
+.box-title-slide h4{
+    font-size: 20px;
+}
+.box-title-slide h1{
+    font-size: 30px;
+}
+.box-text-slide{
+    width: 40%;
+    margin-top: 5vh;
+}
+.box-text-slide div{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0;
+    font-size: 1.2vw;
+}
+
+.box-naviation{
+    padding: 0 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 15vh;
+}
+.navigation{
+    height: 30%;
+    width: 12%;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vh;
+}
+.optionNav{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #949495;
+    cursor: pointer;
+}
+.arrowSlide{
+    cursor: pointer;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 3px;
+}
+#leftArrow{
+    transform: rotate(-45deg);
+    box-shadow: inset 5px 5px #414041;
+}
+#rightArrow{
+    transform: rotate(135deg);
+    box-shadow: inset 5px 5px white;
+}
+
+@media (max-width: 768px){
+    
+    .box-title-slide h1{
+        font-size: 1.2em;
+    }
+    .box-text-slide{
+        width: 70%;
+    }
+    .box-text-slide div{
+        font-size: 12px;
+    }
+    .navigation{
+        width: 25%;
+    }
+}
+
+@media (max-width: 375px){
+
+    .box-text-slide{
+        width: 100%;
+    }
+    .div-slide{
+        padding: 3vh;
+    }
+    .box-title-slide h1{
+        font-size: 1.2em;
+    }
+    
+}

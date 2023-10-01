@@ -1,0 +1,38 @@
+<footer id="footer-human-spaceflight">
+    <div id="box_slide">
+
+      <div id="slider-footer" [style.margin-left]="numberSlide" >
+        <div class="pecture-section" *ngFor="let img of images" [style.background-image]="'url(' + img + ')'"></div>
+      </div>
+      
+      <div class="box-naviation-footer">
+        <div 
+          id="leftArrow-footer" 
+          class="arrowSlide"
+          [style.box-shadow]="numberSlide === '0%'? 'inset 5px 5px #414041' : 'inset 5px 5px white' "
+          (click)="leftArrowSlide()"
+        ></div>
+
+        <div class="navigation-footer">
+          <div class="optionNav-footer" *ngFor="let option of optionsnavigation" [style.background-color]="numberSlide === option? 'white' : '' " (click)="slide(option)"></div>
+        </div>
+
+        <div 
+          id="rightArrow-footer" 
+          class="arrowSlide"
+          [style.box-shadow]="numberSlide === '-453.5%'? 'inset 5px 5px #414041' : 'inset 5px 5px white' "
+          (click)="rightArrowSlide()"
+        ></div>
+      </div>
+    </div>
+    <nav class="nav-footer">
+      <a href="#">SPACEX © 2022</a>
+      <a href="#">TWITTER</a>
+      <a href="#">YOUTUBE</a>
+      <a href="#">INSTAGRAM</a>
+      <a href="#">FLICKR</a>
+      <a href="#">LINKEDIN </a>
+      <a href="#">PRIVACY POLICY</a>
+      <a href="#">SUPPLIERS</a>
+    </nav>
+  </footer>
