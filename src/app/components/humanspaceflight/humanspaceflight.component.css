@@ -1,3 +1,13 @@
+
+#main-image{
+
+    background-image: url('/assets/imagem/humanFlight/1.jpg'); 
+    background-color: black; 
+    background-size: contain; 
+    position: relative;
+}
+
+
 .box-text-slide div{
     display: flex;
     justify-content: space-between;
